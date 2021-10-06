@@ -1,9 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const tiles = gsap.utils.toArray('.tile__row');
-console.log(tiles);
 tiles.forEach((tile, i) => {
-    console.log(tile, i);
     if (i % 2 === 0) {
         gsap.to(tile, {
             scrollTrigger: {
