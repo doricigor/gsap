@@ -1,0 +1,42 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.overflow-custom {
+	overflow-x: hidden;
+}
+
+.menu-open {
+	overflow: hidden;
+}
+
+.container {
+	@media screen and (min-width: 1200px) {
+        max-width: 1460px;
+    }
+}
+
+.container--alt {
+	max-width: 1650px;
+}
+
+.site-content {
+	margin-top: -102px;
+
+	@include mq(lg) {
+		margin-top: 50px;
+	}
+}

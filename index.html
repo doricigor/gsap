@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GSAP</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container--alt">
+                <div class="nav__wrapper js-nav">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">
+                                <a class="nav__list-item-link" href="javascript:;">Link 1</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-item-link" href="javascript:;">Link 2</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-item-link" href="javascript:;">Link 3</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-item-link" href="javascript:;">Link 4</a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__list-item-link" href="javascript:;">Link 5</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="site-content">
+            <main class="site-main">
+                <!-- Banner -->
+            <div class="banner">
+                    <div class="container">
+                        <div class="banner__content">
+                            <img class="banner__logo" src="img/logo.png" alt="Logo">
+                            <h1 class="banner__title page-title">A place to work <br> and network.</h1>
+                            <a class="banner__link" href="javascript:;">Schedule a tour</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Basic block -->
+            <div class="basic-block">
+                    <div class="container basic-block__container">
+                        <h2 class="basic-block__title">Introducing <span class="basic-block__title-bold">E</span><span class="basic-block__title-tiny">S</span><sup>2</sup><span class="basic-block__title-small">tm</span></h2>
+                        <span class="basic-block__subtitle">Northwest Indiana's premier workspace.</span>
+                    </div>
+            </div>
+
+            <!-- GSAP Tile -->
+            <div class="tile__container">
+                <div class="tile__wrap tile__wrap--rotate">
+                    <div class="tile__row">
+                        <div class="tile__item"></div>
+                        <div class="tile__item"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/4.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/5.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/11.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                    </div>
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/8.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/9.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/10.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/11.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/5.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                    </div>
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/13.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/15.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/16.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/17.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/18.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/5.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                    </div>
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/19.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/20.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/21.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/17.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/18.jpg)"></div>
+                        <div class="tile__item"></div>
+                        <div class="tile__item"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List section -->
+            <div class="list-section">
+                    <div class="container container--alt">
+                        <div class="list-section__container">
+                            <h2 class="list-section__title section-title section-title--small">ES<sup>2</sup> Features</h2>
+                            <div class="row list-section__row">
+                                <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                    <div class="list-section__item">
+                                        <div class="list-section__item-img-wrap">
+                                            <img class="list-section__item-img" src="img/list-icon-1.png" alt="list img">
+                                        </div>
+                                        <div class="list-section__item-title-wrap">
+                                            <span class="list-section__item-title">Get up and <br> running quickly</span>
+                                        </div>
+                                        <ul class="list-section__item-list">
+                                            <li class="list-section__item-list-item">Fully furnished, move-in ready offices</li>
+                                            <li class="list-section__item-list-item">24/7 secured access</li>
+                                            <li class="list-section__item-list-item">High-speed fiber internet</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                    <div class="list-section__item">
+                                        <div class="list-section__item-img-wrap">
+                                            <img class="list-section__item-img" src="img/list-icon-2.png" alt="list img">
+                                        </div>
+                                        <div class="list-section__item-title-wrap">
+                                            <span class="list-section__item-title">Maintain a <br> professional <br> presence</span>
+                                        </div>
+                                        <ul class="list-section__item-list">
+                                            <li class="list-section__item-list-item">P.O. Box and receptionist services*</li>
+                                            <li class="list-section__item-list-item">VOIP Phone and printing services*</li>
+                                            <li class="list-section__item-list-item">On-site IT assistance*</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                    <div class="list-section__item">
+                                        <div class="list-section__item-img-wrap">
+                                            <img class="list-section__item-img" src="img/list-icon-3.png" alt="list img">
+                                        </div>
+                                        <div class="list-section__item-title-wrap">
+                                            <span class="list-section__item-title">Share amenities and <br> network with others</span>
+                                        </div>
+                                        <ul class="list-section__item-list">
+                                            <li class="list-section__item-list-item">3 state-of-the-art conference rooms*</li>
+                                            <li class="list-section__item-list-item">Cafe & lounge with coffee and beverages</li>
+                                            <li class="list-section__item-list-item">Frequent networking events</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                    <div class="list-section__item">
+                                        <div class="list-section__item-img-wrap">
+                                            <img class="list-section__item-img" src="img/list-icon-4.png" alt="list img">
+                                        </div>
+                                        <div class="list-section__item-title-wrap">
+                                            <span class="list-section__item-title">Stay <br> flexible</span>
+                                        </div>
+                                        <ul class="list-section__item-list">
+                                            <li class="list-section__item-list-item">Customizable membership plans</li>
+                                            <li class="list-section__item-list-item">Easily add members, desks and offices</li>
+                                            <li class="list-section__item-list-item">Discounts on longer-term <br> memberships</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="list-section__note"><sup>*</sup>Optional for an additional fee</span>
+                    </div>
+            </div>
+
+            <!-- GSAP Tile -->
+            <div class="tile__container tile__container--small">
+                <div class="tile__wrap">
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/13.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/8.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/9.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/10.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/11.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/13.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                    </div>
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/13.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/15.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/16.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/17.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/18.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/8.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                    </div>
+                    <div class="tile__row">
+                        <div class="tile__item" style="background-image:url(images/13.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/4.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/5.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/11.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/12.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/14.jpg)"></div>
+                        <div class="tile__item" style="background-image:url(images/6.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- List section -->
+            <div class="list-section">
+                <div class="container container--alt">
+                    <div class="list-section__container">
+                        <h2 class="list-section__title section-title section-title--small">ES<sup>2</sup> Features</h2>
+                        <div class="row list-section__row">
+                            <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                <div class="list-section__item">
+                                    <div class="list-section__item-img-wrap">
+                                        <img class="list-section__item-img" src="img/list-icon-1.png" alt="list img">
+                                    </div>
+                                    <div class="list-section__item-title-wrap">
+                                        <span class="list-section__item-title">Get up and <br> running quickly</span>
+                                    </div>
+                                    <ul class="list-section__item-list">
+                                        <li class="list-section__item-list-item">Fully furnished, move-in ready offices</li>
+                                        <li class="list-section__item-list-item">24/7 secured access</li>
+                                        <li class="list-section__item-list-item">High-speed fiber internet</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                <div class="list-section__item">
+                                    <div class="list-section__item-img-wrap">
+                                        <img class="list-section__item-img" src="img/list-icon-2.png" alt="list img">
+                                    </div>
+                                    <div class="list-section__item-title-wrap">
+                                        <span class="list-section__item-title">Maintain a <br> professional <br> presence</span>
+                                    </div>
+                                    <ul class="list-section__item-list">
+                                        <li class="list-section__item-list-item">P.O. Box and receptionist services*</li>
+                                        <li class="list-section__item-list-item">VOIP Phone and printing services*</li>
+                                        <li class="list-section__item-list-item">On-site IT assistance*</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                <div class="list-section__item">
+                                    <div class="list-section__item-img-wrap">
+                                        <img class="list-section__item-img" src="img/list-icon-3.png" alt="list img">
+                                    </div>
+                                    <div class="list-section__item-title-wrap">
+                                        <span class="list-section__item-title">Share amenities and <br> network with others</span>
+                                    </div>
+                                    <ul class="list-section__item-list">
+                                        <li class="list-section__item-list-item">3 state-of-the-art conference rooms*</li>
+                                        <li class="list-section__item-list-item">Cafe & lounge with coffee and beverages</li>
+                                        <li class="list-section__item-list-item">Frequent networking events</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 list-section__item-wrap">
+                                <div class="list-section__item">
+                                    <div class="list-section__item-img-wrap">
+                                        <img class="list-section__item-img" src="img/list-icon-4.png" alt="list img">
+                                    </div>
+                                    <div class="list-section__item-title-wrap">
+                                        <span class="list-section__item-title">Stay <br> flexible</span>
+                                    </div>
+                                    <ul class="list-section__item-list">
+                                        <li class="list-section__item-list-item">Customizable membership plans</li>
+                                        <li class="list-section__item-list-item">Easily add members, desks and offices</li>
+                                        <li class="list-section__item-list-item">Discounts on longer-term <br> memberships</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="list-section__note"><sup>*</sup>Optional for an additional fee</span>
+                        </div>
+                    </div>
+
+            <!-- Basic text -->
+            <div class="basic-text">
+                    <div class="container">
+                        <h2 class="section-title section-title--small basic-text__title">Schedule a tour today.</h2>
+                        <a class="basic-text__link" href="javascript:;">Contact</a>
+                    </div>
+            </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container container--alt footer__container">
+                <span class="footer_span">GSAP Footer</span>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

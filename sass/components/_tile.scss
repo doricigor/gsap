@@ -1,0 +1,43 @@
+.tile__container {
+    background-color: $gray;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.tile__container--small {
+    .tile__wrap {
+        height: 105vh;
+    }
+
+    .tile__item {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.tile__wrap {
+    width: 150%;
+	height: 180vh;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%,-50%, 0);
+
+    &--rotate {
+        height: 160vh;
+        transform: translate3d(-50%,-50%, 0) rotate(22.5deg);
+    }
+}
+.tile__row {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+.tile__item {
+	width: 400px;
+    height: 400px;
+    margin: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
